@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  color: #2d2d2d;
+}
+
+.todo-app {
+  width: 500px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#taskInput:focus {
+  outline: none;
+  border-color: #6366f1; /* Notion-like focus blue */
+}
+
+#addBtn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background: #4f46e5;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+li:hover {
+  background: #f1f5f9;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6366f1; /* modern checkbox color */
+  cursor: pointer;
+}
+
+li span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #b91c1c;
+}
